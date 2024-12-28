@@ -3,159 +3,162 @@
   src: url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/996b00fb-4b7a-403d-8da2-ce2225450681.woff2') format('woff2');
 }
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-embed,
-em,
-figure,
-figcaption,
-fieldset,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-a {
-  background: var(--theme-border-subdued);
-  color: var(--theme-text);
-
-  &:hover {
-    background: var(--theme-focused-foreground);
-    color: var(--theme-text);
+:where(.sacred) {
+  a,
+  abbr,
+  acronym,
+  address,
+  applet,
+  article,
+  aside,
+  audio,
+  b,
+  big,
+  blockquote,
+  body,
+  canvas,
+  caption,
+  center,
+  cite,
+  code,
+  dd,
+  del,
+  details,
+  dfn,
+  div,
+  dl,
+  dt,
+  embed,
+  em,
+  figure,
+  figcaption,
+  fieldset,
+  footer,
+  form,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  hgroup,
+  html,
+  i,
+  iframe,
+  img,
+  ins,
+  kbd,
+  label,
+  legend,
+  li,
+  mark,
+  menu,
+  nav,
+  object,
+  ol,
+  output,
+  p,
+  pre,
+  q,
+  ruby,
+  s,
+  samp,
+  section,
+  small,
+  span,
+  strike,
+  strong,
+  sub,
+  summary,
+  sup,
+  table,
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  time,
+  tr,
+  tt,
+  u,
+  ul,
+  var,
+  video {
+  	border: 0;
+  	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+  	vertical-align: baseline;
   }
 
-  &:focus {
-    background: var(--theme-focused-foreground);
-    color: var(--theme-text);
-    outline: 0;
+  a {
+  	background: var(--theme-border-subdued);
+  	color: var(--theme-text);
+
+  	&:hover {
+  		background: var(--theme-focused-foreground);
+  		color: var(--theme-text);
+  	}
+
+  	&:focus {
+  		background: var(--theme-focused-foreground);
+  		color: var(--theme-text);
+  		outline: 0;
+  	}
   }
-}
 
-ul {
-  list-style-position: inside;
-  list-style-type: '▪';
-  text-indent: -1ch;
-}
+  ul {
+  	list-style-position: inside;
+  	list-style-type: '▪';
+  	text-indent: -1ch;
+  }
 
-ol {
-  list-style-type: '';
-  list-style-position: inside;
-  counter-reset: cupcake;
-  text-indent: -1ch;
-}
+  ol {
+  	list-style-type: '';
+  	list-style-position: inside;
+  	counter-reset: cupcake;
+  	text-indent: -1ch;
+  }
 
-ul ul,
-ul ol,
-ol ul,
-ol ol {
-  padding-left: 2ch;
-}
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+  	padding-left: 2ch;
+  }
 
-ol li {
-  padding-left: 1ch;
-  counter-increment: cupcake;
-}
+  ol li {
+  	padding-left: 1ch;
+  	counter-increment: cupcake;
+  }
 
-ul li:before {
-  content: ' ';
-  display: inline-block;
-  width: 1ch;
-  height: 0;
-  visibility: hidden;
-}
+  ul li:before {
+  	content: ' ';
+  	display: inline-block;
+  	width: 1ch;
+  	height: 0;
+  	visibility: hidden;
+  }
 
-ol li:before {
-  content: counters(cupcake, '.') '. ';
-}
+  ol li:before {
+  	content: counters(cupcake, '.') '. ';
+  }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+  	display: block;
+  }
+
 }
 
 body.theme-blue {
